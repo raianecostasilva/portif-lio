@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+</head>
+
+<body>
+    <div class="portfolio-head">
+        <div class="screen">
+            <h2>Portfólio</h2>
+        </div>
+        <div class="options">
+            <ul>
+                <button onclick="scrollToSection()">Meus Serviços</button>
+                <button onclick="scrollToSection()">Fale comigo</button>
+                <button onclick="scrollToSection()">Portfolio</button>
+            </ul>
+        </div>
+    </div>
+    <div class="portfolio-body">
+        <div class="apresentacao">
+            <div class="nome">
+                <h1>Olá, meu nome <br>é Raiane</h1>
+            </div>
+            <div class="principal">
+                <p>Sou programadora e gostaria de apresentar meu trabalho para você através deste portfólio</p>
+            </div>
+            <div>
+                <button onclick="scrollToSection()">Meus Serviços</button>
+            </div>
+        </div>
+        <div class="img-perfil">
+            <img src="img-perfil.jpg">
+        </div>
+    </div>
+    <div class="portfolio-foot">
+        <h1>Alguns dos meus Clientes</h1>
+        <i class="fab fa-apple icone"></i>
+        <i class="fab fa-slack icone"></i>
+        <i class="fab fa-spotify icone"></i>
+    </div>
+    <div class="my-services">
+        <div class="ms-cabecalho">
+            <h3>Conheça</h3>
+            <h1>Meus Serviços</h1>
+            <p>Vou ajudar sua empresa a alcançar grandes resultados</p>
+        </div>
+        <div class="ms-foot">
+            <div class="b1">
+                <div class="i i1">
+                    <i class="fas fa-briefcase briefcase-icon"></i>
+                </div>
+                <h2>Consultoria</h2>
+                <p>Te ajudo a organizar sua empresa e melhorar seus resultados</p>
+            </div>
+            <div class="b2">
+                <div class="i i2">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <h2>Email marketing</h2>
+                <p>Gerenciar campanhas é difícil. Conte comigo para te ajudar</p>
+            </div>
+            <div class="b3">
+                <div class="i i3">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h2>Criação de sites</h2>
+                <p>Desenvolvo seu site inteiro do zero e te entrego prontinho</p>
+            </div>
+            <div class="time">
+                <h3>Economize seu tempo</h3>
+                <h1>Ganhe mais dinheiro</h1>
+                <h2>Digite aqui seu endereço de e-mail. Eu entrarei em contato para fornecer um diagnóstico gratuito
+                </h2>
+                <input type="email" placeholder="Seu e-mail aqui">
+                <button type="submit">Enviar</button>
+            </div>
+            <div class="job">
+                <h3>Conheça meu trabalho</h3>
+                <h1>Portfolio</h1>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // Função para rolar até um ponto específico
+        function scrollToSection() {
+          // Altura da seção para onde você deseja rolar (ajuste conforme necessário)
+          const targetSectionHeight = 560;
+      
+          // Rola a página até o ponto desejado
+          window.scrollTo({
+            top: targetSectionHeight,
+            behavior: 'smooth' // Adiciona uma animação de rolagem suave
+          });
+        }
+      
+        // Adiciona um ouvinte de evento ao botão
+        const scrollButton = document.getElementById('scrollButton');
+        scrollButton.addEventListener('click', scrollToSection);
+      </script>
+</body>
+
+</html>
